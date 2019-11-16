@@ -1,0 +1,27 @@
+.col-md-12 {
+  margin-top: 15px;
+  background-color: #eefafb;
+  img {
+    width: 500px;
+    height: 500px;  
+    object-fit: scale-down;
+    margin-top: 50px;
+  }
+  .text-block {
+    display: inline-block;
+    vertical-align: top;
+    margin: 50px 0 10px 100px;
+    width: 38%;
+    &__title {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    &__main-text {
+      font-weight: normal;
+      font-size: 17px;
+      text-align: start;
+    }
+  }
+}

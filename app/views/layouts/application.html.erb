@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>グラブル奮闘記</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="content-wrapper header-nav">
+        <% if user_signed_in? %>
+          <h1><%= link_to "#{current_user.name}のグラブル奮闘記", "/users/#{current_user.id}", class: "main-title" %></h1>
+        <% else %>
+          <h1><%= link_to '騎空士達のグラブル奮闘記', root_path, class: "main-title" %></h1>
+        <% end %>
+        <nav>
+          <ul>
+            <% if user_signed_in? %>
+              <li><%= link_to '一覧', root_path, class: "btn btn-primary" %></li>
+              <li><%= link_to '投稿する', new_article_path, class: "btn btn-success" %></li>
+              <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "btn btn-danger", data: { confirm: 'ログアウトするんですか？' } %></li>
+            <% else %>
+              <li><%= link_to '一覧', root_path, class: "btn btn-primary" %></li>
+              <li><%= link_to '新規登録', new_user_registration_path, class: "btn btn-primary" %></li>
+              <li><%= link_to 'ログイン', new_user_session_path, class: "btn btn-success" %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+     <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </body>
+</html>

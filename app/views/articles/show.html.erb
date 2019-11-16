@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="col-md-12">
+    <%# <%= image_tag 'kou.jpeg' %> 
+    <% if @article.image.present? %>
+      <%= image_tag(@article.image_url) %>
+    <% else %>
+      <%= image_tag 'niji.jpeg' %>
+    <% end %>
+    <div class="text-block">
+      <h1 class="text-block__title"><%= @article.title %></h1>
+      <%= simple_format @article.body, class: 'text-block__main-text' %>
+      <p class="text-right">
+        <%= @article.created_at.strftime("%Y年%m月%d日 %H時%M分") %>
+      </p>
+      <% if user_signed_in? %>
+        <%= link_to "マイページ", "/users/#{current_user.id}", class: "btn btn-primary" %>
+        <%= link_to "編集", edit_article_path, data: { confirm: '本当にいいんですか？' }, class: "btn btn-success" %>
+        <%= link_to "削除", article_path, method: :delete, data: { confirm: '削除しちゃうんですか？' }, class: "btn btn-danger" %>
+      <% end%>
+    </div>
+  </div>
+</div>
