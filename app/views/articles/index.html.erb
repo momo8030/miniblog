@@ -5,7 +5,7 @@
         <% if article.image.present? %>
           <%= image_tag(article.image_url) %>
         <% else %>
-          <%= image_tag 'niji.jpeg' %>
+          <%= image_tag 'niji.jpg' %>
         <% end %>
         <p><%= article.title %></p>
         <p><%= simple_format article.body %></p>

@@ -4,7 +4,7 @@
     <% if @article.image.present? %>
       <%= image_tag(@article.image_url) %>
     <% else %>
-      <%= image_tag 'niji.jpeg' %>
+      <%= image_tag 'niji.jpg' %>
     <% end %>
     <div class="text-block">
       <h1 class="text-block__title"><%= @article.title %></h1>
