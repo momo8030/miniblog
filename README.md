@@ -13,7 +13,7 @@
 - フロントエンド：HTML, CSS, bootstrap-sass  
 - バックエンド：Ruby, Ruby on Rails  
 - インフラ：Heroku  
-- DB：MySQL  
+- DB：MySQL2  
 
 ## 機能
 - ユーザー登録/ログイン機能  
@@ -68,7 +68,9 @@
         ログイン時、ヘッダー右上にある「ログアウト」をクリック → ログアウトします。  
   
 ## メイン機能の紹介
-**ユーザー登録**
+**ユーザー登録**  
+  
+  ![スクリーンショット 2020-04-03 11 38 00（2）](https://user-images.githubusercontent.com/56537950/78327005-bfc3cf80-75b6-11ea-9852-21d0a99a7151.png)
 
 **投稿**
 
