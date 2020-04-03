@@ -10,10 +10,38 @@
 背景はゲーム画像を載せて雰囲気だけ出してます。
 
 ## 開発環境
-- フロントエンド：HTML, CSS, bootstrap-sass  
-- バックエンド：Ruby, Ruby on Rails  
-- インフラ：Heroku  
-- DB：MySQL2  
+|種別|名称|
+|------|----|
+|開発言語	|Ruby(ver 2.5.1)|
+|フレームワーク|Ruby on Rails(ver 5.2.3)|
+|フロントエンド|HTML, Sass, bootstrap-sass|
+|DB|MySQL2|
+|本番環境||
+|画像アップロード|carrierwave|
+
+## DB設計  
+  
+### usersテーブル
+  
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unique: true|
+|email|string|null: false, default: ""|
+  
+### アソシエーション
+  - has_many :articles
+
+### articlesテーブル
+  
+|Column|Type|Options|
+|------|----|-------|
+|title|string||
+|image|text||
+|body|text||
+|user_id|integer||
+  
+### アソシエーション
+  - belongs_to :user
 
 ## 機能
 - ユーザー登録/ログイン機能  
@@ -22,7 +50,7 @@
 - 画像アップロード（1投稿1枚）  
 
 ## 使い方
-**（各ページの表示例は以下「メイン機能の紹介」をご覧ください）**
+**（各ページの表示例は以下「機能の紹介」をご覧ください）**
     
  1. ユーザー登録  
    
@@ -67,13 +95,14 @@
   
         ログイン時、ヘッダー右上にある「ログアウト」をクリック → ログアウトします。  
   
-## メイン機能の紹介
+## 機能の紹介
 **ユーザー登録**  
   
   ![スクリーンショット 2020-04-03 11 38 00（2）](https://user-images.githubusercontent.com/56537950/78327005-bfc3cf80-75b6-11ea-9852-21d0a99a7151.png)
 
 **投稿**  
   
+  - 画像1枚とテキストで投稿できます。
   ![スクリーンショット 2020-04-03 14 28 25（2）](https://user-images.githubusercontent.com/56537950/78327335-90fa2900-75b7-11ea-9c5c-7b926e4f08cc.png)
 
 
@@ -87,10 +116,13 @@
 
 **一覧画面**  
   
+  - 全ユーザーの投稿を見ることができます。  
+  - 自分以外のユーザーの投稿は閲覧のみとなっています。
   ![スクリーンショット 2020-04-03 15 08 28（2）](https://user-images.githubusercontent.com/56537950/78329695-5abfa800-75bd-11ea-9d96-2dba014d06ac.png)
 
 **マイページ**  
   
+  - 自分の投稿のみ表示されます。
   ![スクリーンショット 2020-04-03 15 12 00（2）](https://user-images.githubusercontent.com/56537950/78329820-96f30880-75bd-11ea-9216-9d2dd99ce20f.png)
   
 ## ライセンス
