@@ -10,10 +10,10 @@
 背景はゲーム画像を載せて雰囲気だけ出してます。
 
 ## 開発環境
-フロントエンド：HTML, CSS, bootstrap-sass  
-バックエンド：Ruby, Ruby on Rails  
-インフラ：Heroku  
-DB：MySQL  
+- フロントエンド：HTML, CSS, bootstrap-sass  
+- バックエンド：Ruby, Ruby on Rails  
+- インフラ：Heroku  
+- DB：MySQL  
 
 ## 機能
 1. ユーザー登録/ログイン機能  
