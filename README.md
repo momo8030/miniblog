@@ -72,9 +72,27 @@
   
   ![スクリーンショット 2020-04-03 11 38 00（2）](https://user-images.githubusercontent.com/56537950/78327005-bfc3cf80-75b6-11ea-9852-21d0a99a7151.png)
 
-**投稿**
+**投稿**  
+  
+  ![スクリーンショット 2020-04-03 14 28 25（2）](https://user-images.githubusercontent.com/56537950/78327335-90fa2900-75b7-11ea-9c5c-7b926e4f08cc.png)
 
 
+**投稿詳細画面**  
+  
+  ![スクリーンショット 2020-04-03 14 35 47（2）](https://user-images.githubusercontent.com/56537950/78327701-812f1480-75b8-11ea-8d6a-d56904dfef75.png)
+
+**編集画面**  
+  
+  ![スクリーンショット 2020-04-03 14 37 58（2）](https://user-images.githubusercontent.com/56537950/78328049-277b1a00-75b9-11ea-848e-6c0fea20be9d.png)
+
+**一覧画面**  
+  
+  ![スクリーンショット 2020-04-03 15 08 28（2）](https://user-images.githubusercontent.com/56537950/78329695-5abfa800-75bd-11ea-9d96-2dba014d06ac.png)
+
+**マイページ**  
+  
+  ![スクリーンショット 2020-04-03 15 12 00（2）](https://user-images.githubusercontent.com/56537950/78329820-96f30880-75bd-11ea-9216-9d2dd99ce20f.png)
+  
 ## ライセンス
 
 
