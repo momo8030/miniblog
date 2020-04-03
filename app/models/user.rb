@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_many :articles
 
-  validates :image, presence: true, unless: :image?
+  # validates :image, presence: true, unless: :image?
 end
