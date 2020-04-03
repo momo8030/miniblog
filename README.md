@@ -4,7 +4,7 @@
 簡単なミニブログです
 単純な機能のみで、画像を1枚とテキストを記入できます
 
-デモページ公開中です→
+デモページ公開中です → [騎空士達のグラブル奮闘記](https://pure-brook-28902.herokuapp.com/)
 
 ## 企画背景
 自分が「GRANBLUE FANTASY」というゲームをしていて、その日記を付けてみようと思いました。  
@@ -18,7 +18,7 @@
 |フレームワーク|Ruby on Rails(ver 5.2.3)|
 |フロントエンド|HTML, Sass, bootstrap-sass|
 |DB|MySQL2|
-|本番環境||
+|本番環境|Heroku|
 |画像アップロード|carrierwave|
 
 ## DB設計  
